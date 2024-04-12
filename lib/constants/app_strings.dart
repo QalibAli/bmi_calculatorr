@@ -8,6 +8,7 @@ class AppStrings {
   static const cm = ".cm";
   static const weight = "WEIGHT";
   static const age = "AGE";
+  static const calculate = "Calculate";
 
   
 }

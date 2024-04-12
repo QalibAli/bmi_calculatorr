@@ -4,18 +4,19 @@ import 'package:bmi/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class BmiCm extends StatelessWidget {
-  const BmiCm({super.key});
+  const BmiCm({super.key, required this.height});
+  final double height;
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "177",
+          "$height",
           style: AppTextStyle.w30b
         ),
-        Text(
+        const Text(
           AppStrings.cm,
           style: TextStyle(
             color: AppColors.white,

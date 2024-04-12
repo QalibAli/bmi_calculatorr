@@ -2,8 +2,12 @@ import 'package:bmi/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class BmiOperationButtons extends StatelessWidget {
-  const BmiOperationButtons({super.key, required this.onTap});
-  final Function() onTap;
+  const BmiOperationButtons({
+    super.key, required this.onIncrementTap, required this.onDecrementTap,
+  });
+
+  final Function() onIncrementTap;
+  final Function() onDecrementTap;
 
 
   @override
@@ -14,7 +18,7 @@ class BmiOperationButtons extends StatelessWidget {
         children: [
           Expanded(
             child: GestureDetector(
-              onTap: onTap,
+              onTap: onIncrementTap,
               child: const ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(50)),
                 child: SizedBox(
@@ -30,9 +34,9 @@ class BmiOperationButtons extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-           Expanded(
+          Expanded(
             child: GestureDetector(
-              onTap: onTap,
+              onTap: onDecrementTap,
               child: const ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(50)),
                 child: SizedBox(

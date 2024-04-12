@@ -1,4 +1,4 @@
-import 'package:bmi/ui/screens/bmi/widgets/bmi_gender.dart';
+import 'package:bmi/ui/pages/bmi/widgets/bmi_gender.dart';
 import 'package:flutter/material.dart';
 
 class BmiGenderView extends StatelessWidget {
@@ -8,6 +8,7 @@ class BmiGenderView extends StatelessWidget {
    @override
    Widget build(BuildContext context) {
        return const Expanded(
+        flex: 3,
               child: Row(
                 children: [
                   BmiGender(

@@ -1,4 +1,5 @@
 import 'package:bmi/constants/app_colors.dart';
+import 'package:bmi/constants/app_paddings.dart';
 import 'package:bmi/constants/app_strings.dart';
 import 'package:bmi/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class BmiGender extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding:  AppPaddings.all12,
         child: ClipRRect(
           borderRadius: const BorderRadius.all(Radius.circular(8)),
           child: SizedBox(

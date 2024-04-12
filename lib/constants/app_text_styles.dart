@@ -14,4 +14,5 @@ class AppTextStyle {
     color: AppColors.white,
     fontSize: 18,
   );
+
 }
