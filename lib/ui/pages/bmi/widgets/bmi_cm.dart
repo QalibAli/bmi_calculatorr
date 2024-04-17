@@ -13,7 +13,7 @@ class BmiCm extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "$height",
+          height.toStringAsFixed(1),
           style: AppTextStyle.w30b
         ),
         const Text(

@@ -21,7 +21,7 @@ class ResultScreen extends StatelessWidget {
         children: [
           Center(
             child: Text(
-              "$result",
+              result.toStringAsFixed(1),
               style: AppTextStyle.w30b,
             ),
           )

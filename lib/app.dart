@@ -1,5 +1,6 @@
 
 import 'package:bmi/ui/pages/bmi/bmi_screen.dart';
+import 'package:bmi/ui/pages/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BmiScreen(),
+      home: const LoginScreen(),
     );
   }
 }

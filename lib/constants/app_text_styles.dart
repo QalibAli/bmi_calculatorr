@@ -15,4 +15,19 @@ class AppTextStyle {
     fontSize: 18,
   );
 
+  static const b30b = TextStyle(
+    color: AppColors.blue,
+    fontWeight: FontWeight.bold,
+    fontSize: 30,
+  );
+
+  static const b20sb = TextStyle(
+    color: AppColors.primary,
+    fontSize: 20,
+    fontWeight: FontWeight.w700
+  );
+
+
+
+
 }

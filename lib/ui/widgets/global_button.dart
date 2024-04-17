@@ -1,6 +1,5 @@
 import 'package:bmi/constants/app_colors.dart';
 import 'package:bmi/constants/app_paddings.dart';
-import 'package:bmi/constants/app_strings.dart';
 import 'package:bmi/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 

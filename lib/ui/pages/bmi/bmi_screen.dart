@@ -19,7 +19,9 @@ class BmiScreen extends StatefulWidget {
 class _BmiScreenState extends State<BmiScreen> {
   late int weight = 65;
   late int age = 18;
-  late double initialValue = 100;
+  late double initialValue = 1;
+
+  
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,8 +37,8 @@ class _BmiScreenState extends State<BmiScreen> {
             children: [
               const BmiGenderView(),
               BmiSlider(
-                value: 0.7,
-                height: initialValue,
+                value: initialValue,
+                height: initialValue * 220,
                 onChanged: (v) {
                   initialValue = v;
                   setState(() {});
