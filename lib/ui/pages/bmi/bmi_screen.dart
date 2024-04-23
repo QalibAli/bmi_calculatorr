@@ -1,12 +1,9 @@
 import 'package:bmi/constants/app_colors.dart';
 import 'package:bmi/constants/app_paddings.dart';
-import 'package:bmi/constants/app_strings.dart';
 import 'package:bmi/ui/pages/bmi/widgets/bmi_app_bar.dart';
 import 'package:bmi/ui/pages/bmi/widgets/bmi_geder_view.dart';
 import 'package:bmi/ui/pages/bmi/widgets/bmi_slider.dart';
 import 'package:bmi/ui/pages/bmi/widgets/bmi_weight.dart';
-import 'package:bmi/ui/pages/result/result_screen.dart';
-import 'package:bmi/ui/widgets/global_button.dart';
 import 'package:flutter/material.dart';
 
 class BmiScreen extends StatefulWidget {
@@ -64,21 +61,21 @@ class _BmiScreenState extends State<BmiScreen> {
                   setState(() {});
                 },
               ),
-              GlobalButton(
-                onPressed: () {
-                  final result = (weight * age) / (initialValue);
-                  setState(() {});
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ResultScreen(
-                        result: result,
-                      ),
-                    ),
-                  );
-                },
-                buttonText: AppStrings.calculate,
-              )
+              // GlobalButton(
+              //   onPressed: () {
+              //     final result = (weight * age) / (initialValue);
+              //     setState(() {});
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => ResultScreen(
+              //           result: result,
+              //         ),
+              //       ),
+              //     );
+              //   },
+              //   buttonText: AppStrings.calculate,
+              // )
             ],
           ),
         ),

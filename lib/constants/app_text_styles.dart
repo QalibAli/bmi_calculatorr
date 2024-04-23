@@ -10,6 +10,12 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
   );
 
+  static const w20b700 = TextStyle(
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+  );
+
   static const w18 = TextStyle(
     color: AppColors.white,
     fontSize: 18,

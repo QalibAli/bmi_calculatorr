@@ -1,5 +1,3 @@
-
-import 'package:bmi/ui/pages/bmi/bmi_screen.dart';
 import 'package:bmi/ui/pages/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
